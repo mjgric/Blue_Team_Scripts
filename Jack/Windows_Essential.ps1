@@ -5,6 +5,13 @@ at the start of IRSec.#>
 #Removes global autoruns. User autoruns will persist after this step.
 Remove-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\*"
 
+#Validates Autoload registry values
+$AutoLoad = Get-ItemPropertyValue -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' -Name 'AppCertDlls'
+$SemiAutoLoad = Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows' -Name 'AppInit_DLLs'
+Echo "$AutoLoad <---- AutoLoad"
+Echo "$SemiAutoLoad <---- AppInit AutoLoad"
+Echo "If either of the above arrows are pointing to a value, investigate them immediately and run this script again!"
+
 #Array of local user accounts
 $LocalUsers = Get-LocalUser
 
