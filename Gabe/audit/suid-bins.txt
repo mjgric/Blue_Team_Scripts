@@ -1,0 +1,9 @@
+/usr/bin/sudo 4755
+/usr/bin/su 4755
+/usr/bin/passwd 4755
+/usr/bin/chsh 4755
+/usr/bin/chfn 4755
+/usr/bin/newgrp 4755
+/usr/bin/gpasswd 4755
+/usr/bin/mount 4755
+/usr/bin/umount 4755
