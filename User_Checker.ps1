@@ -14,8 +14,8 @@
 # 1. CONFIGURATION: edit these arrays with users you want to approve
 # ---------------------------------------------------------------------------
 # @( ... ) creates an array. Items are separated by commas.
-$ApprovedAdmins = @('Alice', 'AdminSteve')
-$ApprovedUsers  = @('Bob', 'Carol', 'Dave')
+$ApprovedAdmins = @('scrutineer', 'techdirector', 'crewchief', 'firechief', 'whiteteam')
+$ApprovedUsers  = @('jackcrew', 'garagecrew', 'celebrity', 'pitlaner', 'reserve', 'gunners', 'whiteteam')
 
 # Built-in Windows accounts we never want to prompt about.
 $BuiltInAccounts = @('Administrator', 'DefaultAccount', 'Guest', 'WDAGUtilityAccount')
