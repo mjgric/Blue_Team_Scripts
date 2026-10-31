@@ -3,7 +3,7 @@
 allowed_users=(
     "root"
     "sync"
-    "student"
+    "whiteteam"
     "scrutineer"
     "techdirector"
     "crewchief"
